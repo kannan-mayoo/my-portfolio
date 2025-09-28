@@ -31,13 +31,16 @@ export default function BlogPage() {
   const posts = getAllPosts(); // runs server-side
 
   return (
-    <div className="py-20 flex justify-center min-h-screen items-start bg-green-50 text-center">
+    <div className="py-20 flex justify-center min-h-screen items-start bg-green-50 text-center bg-gray-50 text-center bg-gradient-to-tr from-lime-200 via-green-100 to-cyan-200">
       <div className="max-w-3xl w-full mx-auto text-left py-12 py-20">
-      <h1 className="text-3xl font-bold mb-6 text-3xl font-bold mb-6 text-3xl font-bold mb-6 text-3xl font-bold mb-6 text-4xl font-bold mb-4 border-b pb-2
+      <h1 className="text-3xl font-bold mb-6 text-3xl font-bold mb-6 text-3xl text-red-300 font-bold mb-6 text-3xl font-bold mb-6 text-4xl font-bold mb-4 border-b pb-2
          animate-fade-down opacity-0 animate-duration-1000 animate-fill-forwards" style={{
             animation: 'fadeDown 1s ease-in-out forwards',
             animationDelay: '0.1s',
-          }}>Blog</h1>
+          }}>Blog
+          <hr className="my-1 border-t-2 border-red-500" />
+          </h1>
+
           <style>
           {`
             @keyframes fadeDown {
@@ -46,6 +49,7 @@ export default function BlogPage() {
             }
           `}
         </style>
+        
       <ul className="space-y-6">
         {posts.map((post: any) => (
           <li key={post.slug} className="border p-4 rounded-lg shadow">

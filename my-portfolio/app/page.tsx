@@ -7,14 +7,14 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <Layout>
-          <div className='mt-6 text-long text-black-600 bg-red dark:text-gray-300'>
-          <section className="text-center py-20 ">
-      <h1 className="text-5xl font-bold mb-6"> Hi, I'm Mayoora Balan 👋 </h1>
+          <div className='mt-6 text-long text-black-600 bg-red dark:text-gray-300 '>
+          <section className="text-center py-20 text-xl font-black tracking-tight text-gray-900 ">
+      <h1 className="text-5xl animate-bounce font-bold mb-6"> Hi, I'm Mayoora Balan <span className="inline-block animate-wiggle"> 👋 </span></h1>
 
       <hr className="my-1 border-t-2 border-red-500" />
 
 
-        <p className="mt-6 text-long text-gray-600 dark:text-gray-300">
+        <p className="mt-6 text-long text-gray-600 dark:text-gray-300 animate-pulse">
           Welcome to my portfolio & blog built with Next.js and Tailwind CSS
         </p>
         <p className="mt-6 text-long text-lg text-gray-600 dark:text-gray-300">
@@ -28,13 +28,13 @@ export default function Home() {
         <p className='text-lg' ></p>
     </section>
     <div>
-      <h1 className="text-xl font-bold mb-6"> Recent Activities</h1>
+      <Link href="/about" className="text-xl font-bold mb-6 transition duration-700 hover:scale-105 underline text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-pink-500 to-orange-500 flex items-center gap-2 "> Recent Activities</Link>
       <ol>
-        <li>Added a fresh stack of mind-bending <span>Books</span> to my reading journey</li>
-        <li>Updated my <span>To-Do list</span> with some daring (and slightly crazy) life experiments.</li>
-        <li>Discovered new <span>Podcasts & Documentaries</span> that challenge how I think.</li>
-        <li>Published quirky <span>Blog drafts</span> — from overthinking to digital minimalism.</li>
-        <li>Explored <span>fascinating concepts</span> like antifragility, network effects & Lindy effect.</li>
+        <li>Added a fresh stack of mind-bending <span className='font-semibold'>Books</span> to my reading journey</li>
+        <li>Updated my <span className='font-semibold '>To-Do list</span> with some daring (and slightly crazy) life experiments.</li>
+        <li>Discovered new <span className='font-semibold'>Podcasts & Documentaries</span> that challenge how I think.</li>
+        <li>Published quirky <span className='font-semibold'>Blog drafts</span> — from overthinking to digital minimalism.</li>
+        <li>Explored <span className='font-semibold'>fascinating concepts</span> like antifragility, network effects & Lindy effect.</li>
         <li>Planned my next mini travel-experiment in metro cities I can’t resist.</li>
         <li>Practicing “learning one deep skill a year” — current obsession: AI + e-commerce.</li>
       </ol>

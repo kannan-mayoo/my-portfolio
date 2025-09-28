@@ -32,7 +32,7 @@ export default function Projects() {
                                 A blockchain + IoT powered system that tracks products across the supply chain in real-time...
                                 <a href="#" className="text-blue-500">View</a>
                             </p>
-                    </li>git --version
+                    </li>
 
                     
 

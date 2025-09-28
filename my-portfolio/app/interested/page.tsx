@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function Interested() {
     return (
-        <div className="flex justify-center min-h-screen items-start bg-gray-50 text-center">
+        <div className="flex justify-center min-h-screen items-start bg-gray-50 text-center bg-gradient-to-bl from-purple-200 via-pink-100 to-yellow-200">
             <div className="max-w-2xl w-full mx-auto text-left py-12 py-20">
             <h1 className="text-3xl font-bold mb-6 text-4xl font-bold mb-4 border-b pb-2
          animate-fade-down opacity-0 animate-duration-1000 animate-fill-forwards" style={{
