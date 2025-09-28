@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint", 
-    "vercel-build": "npm run prepare && next build"
+    "vercel-build": "pwd && ls -la && cat package.json && npm run build"
   },
   "dependencies": {
     "framer-motion": "^12.23.22",
